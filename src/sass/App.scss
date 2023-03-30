@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "./MovieList";
+
+$primary-color: #007bff;
+$secondary-color: #f8f9fa;
+$dark-color: #343a40;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: $secondary-color;
+}
+
+header {
+  background-color: $dark-color;
+  padding: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 1rem;
+
+  .search {
+    display: flex;
+    justify-content: flex;
+    margin-bottom: 1rem;
+
+    input {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 0.5rem;
+      border: none;
+      background-color: $primary-color;
+      color: white;
+      border-radius: 5px;
+      margin-left: 0.5rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+footer {
+  background-color: $dark-color;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+
+    a {
+      color: white;
+      margin-left: 0.5rem;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
