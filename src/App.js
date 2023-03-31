@@ -6,7 +6,6 @@ import MovieProfile from "./components/MovieProfile";
 
 function App() {
   return (
-    <Router>
       <div className="App">
         <header>
           <h1>Movies</h1>
@@ -28,7 +27,6 @@ function App() {
         </div>
         </footer> 
      </div>
-    </Router>
   );
 }
 
